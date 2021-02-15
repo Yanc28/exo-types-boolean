@@ -5,11 +5,9 @@ let isRainy = true
 let isWindy = false
 let temperature = 10
 
-if (isRainy || isWindy) {
+if ((isRainy || isWindy) && temperature < 15) {
   console.log('Mettez votre manteau')
 }
-else if (temperature < 10) {
-  console.log('Couvrez-vous')
-} else {
+else {
   console.log('Nous n avez pas besoin de manteau today')
 }
